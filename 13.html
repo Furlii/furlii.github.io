@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+	<title>Thurl</title>
+	<link rel="stylesheet" href="csss.css">
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+<div class="main">
+
+<div class="container">
+		<div class="inner">
+			<div>
+
+<h1>Compass-Straightedge Construction</h1>
+
+<h2>@thurlii</h2>
+
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- separator -->
+
+
+
+	<div class="container">
+		<div class="inner">
+			<div>
+
+<p>list :</p>
+
+<p>line across two points \(a_0\) and \(a_1\)</p>
+
+<p>$$L(a_0 , a_1) = L(a_1 , a_0)$$</p>
+
+<p>circle at a center \(a_0\) across \(a_1\)</p>
+
+<p>$$L(a_0 , a_1) = L(a_1 , a_0)$$</p>
+
+<p>point intersection between two lines</p>
+
+<p>point intersections between two circles</p>
+
+<p>point intersections between a line and a circle</p>
+
+			</div>
+		</div>
+	</div>
+
+
+<!-- separator -->
+
+
+
+	<div class="container">
+		<div class="inner">
+			<div>
+
+<p>line across two points \(a_0\) and \(a_1\)</p>
+
+<p>$$(z-a_0)(a_1-a_0)^*=(z-a_0)^*(a_1-a_0) \\$$</p>
+
+<p>$$z(a_1-a_0)^*-a_0(a_1-a_0)^*=z^*(a_1-a_0)-a_0^*(a_1-a_0) \\$$</p>
+
+<p>$$z(a_1-a_0)^*-a_0a_1^*+a_0a_0^*=z^*(a_1-a_0)-a_0^*a_1+a_0^*a_0 \\$$</p>
+
+<p>$$z(a_1-a_0)^*-a_0a_1^*=z^*(a_1-a_0)-a_0^*a_1 \\$$</p>
+
+<p>$$z(a_1-a_0)^*-z^*(a_1-a_0)=a_0a_1^*-a_0^*a_1 \\$$</p>
+
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- separator -->
+
+
+
+	<div class="container">
+		<div class="inner">
+			<div>
+
+<p>circle at a center \(a_0\) point across a point \(a_1\)</p>
+
+<p>$$(z-a_0)(z-a_0)^*=(a_1-a_0)(a_1-a_0)^*$$</p>
+
+<p>$$z(z-a_0)^*-a_0(z-a_0)^*=a_1(a_1-a_0)^*-a_0(a_1-a_0)^*$$</p>
+
+<p>$$zz^*-z a_0^*-a_0z^*+a_0 a_0^*=a_1 a_1^*-a_1 a_0^*-a_0 a_1^* +a_0 a_0^*$$</p>
+
+<p>$$zz^*-z a_0^*-a_0z^*=a_1 a_1^* -a_1 a_0^* -a_0 a_1^*$$</p>
+
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- separator -->
+
+
+
+	<div class="container">
+		<div class="inner">
+			<div>
+
+<p>point intersection between two lines</p>
+
+<p>$$\begin{array}{llll}
+z(a_1-a_0)^*&-z^*(a_1-a_0)&=a_0a_1^*-a_0^*a_1\\ \\
+z(b_1-b_0)^*&-z^*(b_1-b_0)&=b_0b_1^*-b_0^*b_1\\ \\ \\
+\end{array}$$</p>
+
+<p>one may chose to solve by linear algebra</p>
+
+<p>$$\begin{array}{llll}
+z(a_1-a_0)^*(b_1-b_0) &-z^*(a_1-a_0)(b_1-b_0) &= (a_0a_1^*-a_0^*a_1)(b_1-b_0)\\ \\
+z(b_1-b_0)^*(a_1-a_0) &-z^*(b_1-b_0)(a_1-a_0) &= (b_0b_1^*-b_0^*b_1)(a_1-a_0)\\ \hline \\
+z\Big((a_1-a_0)^*(b_1-b_0)-(b_1-b_0)^*(a_1-a_0)\Big)&&= (a_0a_1^*-a_0^*a_1)(b_1-b_0)-(b_0b_1^*-b_0^*b_1)(a_1-a_0)\\ \\ \\
+\end{array}$$</p>
+
+<p>$$z = \dfrac{(a_0a_1^*-a_0^*a_1)(b_1-b_0)-(b_0b_1^*-b_0^*b_1)(a_1-a_0)}{(a_1-a_0)^*(b_1-b_0)-(b_1-b_0)^*(a_1-a_0)}$$</p>
+
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- separator -->
+
+
+
+	<div class="container">
+		<div class="inner">
+			<div>
+
+<p>point intersections of two circles</p>
+
+<p>$$\begin{array}{llll}
+zz^* &-z a_0^* &-a_0 z^* &= a_1 a_1^* -a_1 a_0^* -a_0 a_1^* \\ \\
+zz^* &-z b_0^* &-b_0 z^* &= b_1 b_1^* -b_1 b_0^* -b_0 b_1^* \\ \\ \\
+\end{array}$$</p>
+
+<p>isolate \(z^*\)</p>
+
+<p>$$zz^* -a_0 z ^* -z {a_0 }^* = a_1 {a_1 }^* -a_1 {a_0 }^* -a_0 {a_1 }^*$$</p>
+
+<p>$$z^* (z -a_0) -z {a_0 }^* = a_1 {a_1 }^* -a_1 {a_0 }^* -a_0 {a_1 }^*$$</p>
+
+<p>$$z^* (z -a_0) = a_1 a_1 ^* -a_1 a_0 ^* -a_0 a_1 ^* -z a_0 ^*$$</p>
+
+<p>$$z^* = \dfrac{a_1 a_1 ^* -a_1 a_0 ^* -a_0 a_1 ^* -z a_0 ^*}{z -a_0}$$</p>
+
+<p>$$zz^* -z b_0 ^* -b_0 z ^* = b_1 b_1 ^* -b_1 b_0 ^* -b_0 b_1 ^*$$</p>
+
+<p>$$z\left(\dfrac{\dots}{z-a_0}\right) -z b_0^* -b_0 \left(\dfrac{\dots}{z-a_0}\right) = b_1 b_1^* - b_1 b_0^* - b_0 b_1^*$$</p>
+
+<p>$$z\left(\dfrac{\dots}{z-a_0}\right) -z b_0^* -b_0 \left(\dfrac{\dots}{z-a_0}\right) - b_1 b_1^* + b_1 b_0^* + b_0 b_1^*= 0$$</p>
+
+<p>$$z\left(\dots\right) -z b_0 ^*(z-a_0) -b_0 \left(\dots\right) +\left(-b_1 b_1^* + b_1 b_0^* + b_0 b_1^*\right)(z-a_0)= 0$$</p>
+
+<p>$$\begin{array}{lllll}
++z(\dots)         &=  a_0 ^* z^2 &+z\Big( a_1 a_1 ^* -a_1 a_0 ^* -a_0 a_1 ^* \Big) \\ \\
+-{b_0 }^*z(z-a_0) &= -b_0 ^* z^2 &+z( a_0 b_0 ^* ) \\ \\
+-b_0(\dots)       &=           &+z(-a_0 ^* b_0 ) &-b\Big( a_1 a_1 ^* -a_1 a_0 ^* -a_0 a_1 ^* \Big) \\ \\
+(\dots)(z-a_0)    &= &-z\Big( b_1 b_1 ^* -b_1 b_0 ^* -b_0 b_1 ^* \Big) &+a_0 \Big( b_1 b_1 ^* -b_1 b_0 ^* -b_0 b_1 ^* \Big) \\ \\
+\end{array}$$</p>
+
+<p>to obtain quadratic</p>
+
+<p>$$z^2 +d_0 z +d_1 = 0$$</p>
+
+<p>with</p>
+
+<p>$$d_0 (a_0-b_0)^* = a_1 a_1 ^* -a_1 a_0 ^* -a_0 a_1 ^* -b_1 b_1 ^* +b_1 b_0 ^* +b_0 b_1 ^* +a_0 b_0 ^*-a_0 ^* b_0$$</p>
+
+<p>$$d_1 (a_0-b_0)^* =a_0 \Big( b_1 b_1 ^* -b_1 b_0 ^* -b_0 b_1 ^* \Big)-b\Big( a_1 a_1 ^* -a_1 a_0 ^* -a_0 a_1 ^* \Big)$$</p>
+
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- separator -->
+
+
+
+<div class="container">
+		<div class="inner">
+			<div>
+
+<p>point intersections of two circles (2nd attempt)</p>
+
+<p>$$\begin{array}{llll}
+zz^* &-z a_0^* &-a_0 z^* &= a_1 a_1^* -a_1 a_0^* -a_0 a_1^* \\ \\
+zz^* &-z b_0^* &-b_0 z^* &= b_1 b_1^* -b_1 b_0^* -b_0 b_1^* \\ \\ \\
+\end{array}$$</p>
+
+<p>$$-z(a_0 -b_0)^* -z^*(a_0 -b_0) = a_1 a_1^* -a_1 a_0^* -a_0 a_1^* -b_1 b_1^* +b_1 b_0^* +b_0 b_1^*$$</p>
+
+<p>$$-z^*(a_0 -b_0) = a_1 a_1^* -a_1 a_0^* -a_0 a_1^* -b_1 b_1^* +b_1 b_0^* +b_0 b_1^* +z(a_0 -b_0)^* $$</p>
+
+<p>$$z^* = -\dfrac{a_1 a_1^* -a_1 a_0^* -a_0 a_1^* -b_1 b_1^* +b_1 b_0^* +b_0 b_1^* +z(a_0 -b_0)^*}{a_0 -b_0} $$</p>
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- separator -->
+
+
+
+<div class="container">
+		<div class="inner">
+			<div>
+
+<p>point intersections of two circles (3rd attempt)</p>
+
+<p>recall</p>
+
+<p>$$\begin{array}{llll}
+zz^* &-z a_0^* &-a_0 z^* &= a_1 a_1^* -a_1 a_0^* -a_0 a_1^* \\ \\
+zz^* &-z b_0^* &-b_0 z^* &= b_1 b_1^* -b_1 b_0^* -b_0 b_1^* \\ \\ \\
+\end{array}$$</p>
+
+<p>are eqns of circles at \(a_0\) through \(a_1\) and at \(b_0\) through \(b_1\) respectively</p>
+
+<p>the sets of points \(a_0 , a_1 , b_0 , b_1\)</p>
+
+<p>$$\{a_0 , a_1 , b_0 , b_1\}$$</p>
+
+<p>translate \(a_0\) to point of origin\(0+0i\)</p>
+
+<p>$$\{0 , a_1 -a_0 , b_0 -a_0 , b_1 -a_0\}$$</p>
+
+<p>multiply set such that \(b_0 -a_0\) become \(1+0i\)</p>
+
+<p>$$\left\{0 , \dfrac{a_1 -a_0}{b_0 -a_0} , 1 , \dfrac{b_1 -a_0}{b_0 -a_0}\right\}$$</p>
+
+<p>let $$\begin{array}{rrrr}
+f_0 &= \dfrac{a_1 -a_0}{b_0 -a_0}\\ \\
+f_1 &= \dfrac{b_1 -a_0}{b_0 -a_0}\\ \\ \\
+\end{array}$$</p>
+
+<p>so $$\{0 , f_0 , 1 , f_1\}$$</p>
+
+<p>the equations are now</p>
+
+<p>$$\begin{array}{llll}
+zz^* &-z (0)^* &-(0) z^* &= f_0 f_0^* -f_0 (0)^* -(0) f_0^* \\ \\
+zz^* &-z (1)^* &-(1) z^* &= f_1 f_1^* -f_1 (1)^* -(1) f_1^* \\ \\ \\
+\end{array}$$</p>
+
+<p>$$\begin{array}{llll}
+zz^* & & &= f_0 f_0^* \\ \\
+zz^* &-z  &- z^* &= f_1 f_1^* -f_1 -f_1^* \\ \\ 
+z^* & & &= \dfrac{f_0 f_0^*}{z}\\ \\ 
+f_0 f_0^* &-z  &- \dfrac{f_0 f_0^*}{z} &= f_1 f_1^* -f_1 -f_1^* \\ \\ 
+f_0 f_0^* z &-z^2  &- f_0 f_0^*  &= (f_1 f_1^* -f_1 -f_1^*)z \\ \\ \\
+\end{array}$$</p>
+
+<p>results in a quadratic</p>
+
+<p>$$f^2 + (f_1 f_1^* -f_1 -f_1^* -f_0 f_0^*)f - f_0 f_0^* = 0$$</p>
+
+<p>solving this quadratic gives</p>
+
+<p>$$2f = -(f_1 f_1^* -f_1 -f_1^* -f_0 f_0^*) \pm \sqrt{\Big( f_1 f_1^* \Big)^2 -2\Big( f_1 f_1^* \Big)\Big(f_1 +f_1^* +f_0 f_0^*\Big) +\Big(f_1 +f_1^* +f_0 f_0^*\Big)^2}$$</p>
+
+<p>placing it back into its original position and orientation</p>
+
+<p>$$\dfrac{z-a_0}{b_0-a_0} = f$$</p>
+
+<p>$$z = f(b_0-a_0) + a_0$$</p>
+
+<p>gives</p>
+
+<p>$$2z = 2f(b_0-a_0) + 2a_0$$</p>
+
+<p>$$2z = 2a_0 -(f_1 f_1^* -f_1 -f_1^* -f_0 f_0^*)(b_0-a_0) \pm (b_0-a_0)\sqrt{\Big( f_1 f_1^* \Big)^2 -2\Big( f_1 f_1^* \Big)\Big(f_1 +f_1^* +f_0 f_0^*\Big) +\Big(f_1 +f_1^* +f_0 f_0^*\Big)^2}$$</p>
+
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- separator -->
+
+
+
+<div class="container">
+		<div class="inner">
+			<div>
+
+<p>point intersections of two circles</p>
+
+<p>$$\begin{array}{llll}
+zz^* &-z a_0^* &-a_0 z^* &= a_1 a_1^* -a_1 a_0^* -a_0 a_1^* \\ \\
+zz^* &-z b_0^* &-b_0 z^* &= b_1 b_1^* -b_1 b_0^* -b_0 b_1^* \\ \\ \\
+\end{array}$$</p>
+
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- separator -->
+
+
+
+<div class="container">
+		<div class="inner">
+			<div>
+
+<p>to be continued</p>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
