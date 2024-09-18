@@ -65,7 +65,7 @@
 
 <p>Projection | displaying 3D in a 2D</p> <p>$$\phantom{|}$$</p>
 
-<p>with \( (0, 0) \) as the center of both coordinate</p> <p>$$\phantom{|}$$</p>
+<p>with \( (0, 0) \) as the center of both coordinate and \(d\) as depth or distance (to the camera)</p> <p>$$\phantom{|}$$</p>
 
 <p>$$f(x, y, z)= \left(\dfrac{x\cdot d}{z+d}, \dfrac{y \cdot d}{z+d}\right)$$</p> <p>$$\phantom{|}$$</p>
 
@@ -74,6 +74,10 @@
 <p>meanwhile if we use y as depth axis and z for height axis</p> <p>$$\phantom{|}$$</p>
 
 <p>$$f(x, y, z)= \left(\dfrac{x\cdot d}{y+d}, \dfrac{z \cdot d}{y+d}\right)$$</p> <p>$$\phantom{|}$$</p>
+
+<p>with \(v_x , v_y\) as vanishing point</p> <p>$$\phantom{|}$$</p>
+
+<p>$$f(x, y, z)= \left(v_x+\dfrac{(x-v_x)\cdot d}{y+d}, v_y\dfrac{(z-v_y) \cdot d}{y+d}\right)$$</p> <p>$$\phantom{|}$$</p>
 
 			</div>
 		</div>
