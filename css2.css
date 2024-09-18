@@ -1,0 +1,183 @@
+@font-face {
+    font-family: CMU;
+    src: url("fonts/cmunrm.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CMU;
+    src: url("fonts/cmunti.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: CMU;
+    src: url("fonts/cmunrm.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: CMU;
+    src: url("fonts/cmunbi.ttf");
+    font-style: italic;
+    font-weight: bold;
+}
+
+@keyframes fade01 {
+	0% {
+		transform: translateX(-10rem) rotateZ(-11.25deg);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0rem) rotateZ(0deg);
+		opacity: 1;
+	}
+}
+
+html {
+
+}
+
+body {
+	margin:auto;
+	max-width:750px;
+	font-size:100%;
+	font-family: CMU;
+	background-color: #bdcce3;
+	font-style: normal;
+}
+
+h1 {
+	font-size:150%;
+	font-family: CMU;
+	font-style: normal;
+	border-width: 1rem;
+	border-color: rgba(0,0,0,0%);
+	border-style: solid;
+	border-radius: 1rem;
+}
+
+h2 {
+	font-size:120%;
+	font-family: CMU;
+	font-style: normal;
+}
+
+.red {
+	color: #ff0000;
+}
+
+.comments {
+	font-size:75%;
+}
+
+.microtext {
+	font-size:50%;
+}
+
+.centered {
+	text-align: center;
+}
+
+.main{
+	border-color: rgba(0,0,0,0%);
+	border-style: solid;
+	justify-content: center;
+}
+
+.container {
+	margin: 0.5rem;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 1rem;
+	background-color: #ffffff;
+	border-color: #a0a0a0;
+}
+
+.inner {
+	padding: 0.5rem;
+	border-color: rgba(0,0,0,0%);
+	border-style: solid;
+	border-width: 1rem;
+}
+
+#container01 {
+	display:flex ;
+	flex-direction:row ;
+}
+
+#img01 {
+	width: 200px;
+	height: 200px;
+	border-radius: 1rem;
+	overflow: hidden;
+animation: fade01 2s cubic-bezier(0.24, 1.61, 0.45, 0.93);
+	animation-delay:0.1s;
+}
+
+#container02 {
+	display:flex ;
+	flex-direction:row ;
+}
+
+.frame {
+	width: 100%;
+	margin: 0.5rem;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.ofed {
+	overflow-x: scroll;
+}
+
+a {
+	color: #000000
+}
+a:hover {
+	color: #ff3399
+}
+
+.button {
+	border-radius: 1rem;
+	border-width: 1px;
+}
+
+#button01 {
+	border-radius: 1rem;
+	border-width: 1px;
+}
+
+#box00 {
+	animation: fade01 1.5s cubic-bezier(0.24, 1.61, 0.45, 0.93);
+	animation-delay:0s;
+}
+
+#box01 {
+	animation: fade01 1.5s cubic-bezier(0.24, 1.61, 0.45, 0.93);
+	animation-delay:0.1s;
+}
+
+#box02 {
+	animation: fade01 1.5s cubic-bezier(0.24, 1.61, 0.45, 0.93);
+	animation-delay:0.2s;
+}
+
+@media (max-width: 600px) {
+	#container01 {
+		margin: auto;
+		flex-direction: column;
+	}
+
+	#img01 {
+		margin: auto;
+		flex-direction: column;
+	}
+
+	#p01 {
+		margin: auto;
+		flex-direction: column;
+	}
+}
+
+
