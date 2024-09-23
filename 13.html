@@ -336,7 +336,7 @@
 
 <p>$$\text{sgn}(z)=\dfrac{z}{\sqrt{\phantom{\overset{0}{|}}z\cdot z^*}}$$</p> <p>$$\phantom{|}$$</p>
 
-<p>$$\text{arg}(z)=-i\cdot \ln \sgn{z}$$</p> <p>$$\phantom{|}$$</p>
+<p>$$\text{arg}(z)=-i\cdot \ln \Big(\text{sgn}{z}\Big)$$</p> <p>$$\phantom{|}$$</p>
 
 <p>the complex conjugate \(z^*\) reflects \(z\) over real axis</p> <p>$$\phantom{|}$$</p>
 
@@ -346,13 +346,29 @@
 
 <p>magnitude function \(\text{mgn}(z)\) (commonly written as \(|z|\)) returns the distance of \(z\) to \(0+0i\)</p> <p>$$\phantom{|}$$</p>
 
-<p>signum function \(\text{mgn}(z)\) returns the shadow of \(z\) projected on the unit circle \(\mathbb{S}^1\)</p> <p>$$\phantom{|}$$</p>
+<p>signum function \(\text{sgn}(z)\) returns the shadow of \(z\) projected on the unit circle \(\mathbb{S}^1\)</p> <p>$$\phantom{|}$$</p>
 
 <p>argument function \(\text{arg}(z)\) main idea is to return angle formed by three points \(z , 0+0i , 1+0i\)</p> <p>$$\phantom{|}$$</p>
 
 <p>but due to nature of periodicity, argument function returns multiple values of \(\varphi+2k\pi\)</p> <p>$$\phantom{|}$$</p>
 
 <p>\(\varphi\) being angle of \(z , 0+0i , 1+0i\) while \(k\in\mathbb{Z}\)</p> <p>$$\phantom{|}$$</p>
+
+<p>values returned by \(\text{Re}(z)\) and \(\text{Im}(z)\) lies on real axis</p> <p>$$\phantom{|}$$</p>
+
+<p>$$\text{Re}(z) , \(\text{Im}(z) \in \mathbb{R}$$</p> <p>$$\phantom{|}$$</p>
+
+<p>values returned by \(\text{mgn}(z)\) also lies on real axis, particularly positive real axis</p> <p>$$\phantom{|}$$</p>
+
+<p>$$\text{mgn}(z) \in \mathbb{R}^+$$</p> <p>$$\phantom{|}$$</p>
+
+<p>values returned by \(\text{sgn}(z)\) lies on circle group</p> <p>$$\phantom{|}$$</p>
+
+<p>$$\text{sgn}(z) \in \mathbb{S}^1$$</p> <p>$$\phantom{|}$$</p>
+
+<p>let \(\varphi_0\) and \(\varphi_1\) be two possible values of \(\text{arg}(z)\)</p> <p>$$\phantom{|}$$</p>
+
+<p>the value of $$dfrac{1}{2\pi}\Big(\varphi_1-\varphi_0\Big) \in \mathbb{Z}$$</p> <p>$$\phantom{|}$$</p>
 
 			</div>
 		</div>
