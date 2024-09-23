@@ -290,7 +290,7 @@
 		<div class="inner">
 			<div>
 
-<p class="largetype">Geometric Transformations | Complex Geometry</p> <p>$$\phantom{|}$$</p>
+<p class="largetype">Geometric Transformations Intro | Complex Geometry</p> <p>$$\phantom{|}$$</p>
 
 <p>this page covers few out of several geometric transformations in complex geometry</p> <p>$$\phantom{|}$$</p>
 
@@ -311,6 +311,10 @@
 <p>$$f(z)=\dfrac{az+b}{cz+d}$$</p> <p>$$\phantom{|}$$</p>
 
 <p>\(\forall a,b,c,d\in\mathbb{C}\) while \(ad-bc\neq 0\)</p> <p>$$\phantom{|}$$</p>
+
+<p class="largetype">Conformal Transformations : preserves angles</p> <p>$$\phantom{|}$$</p>
+
+<p>all möbius transformations are conformal but not all conformal transformations are möbius</p> <p>$$\phantom{|}$$</p>
 
 			</div>
 		</div>
@@ -356,7 +360,7 @@
 
 <p>values returned by \(\text{Re}(z)\) and \(\text{Im}(z)\) lies on real axis</p> <p>$$\phantom{|}$$</p>
 
-<p>$$\text{Re}(z) , \(\text{Im}(z) \in \mathbb{R}$$</p> <p>$$\phantom{|}$$</p>
+<p>$$\text{Re}(z) , \text{Im}(z) \in \mathbb{R}$$</p> <p>$$\phantom{|}$$</p>
 
 <p>values returned by \(\text{mgn}(z)\) also lies on real axis, particularly positive real axis</p> <p>$$\phantom{|}$$</p>
 
@@ -368,7 +372,15 @@
 
 <p>let \(\varphi_0\) and \(\varphi_1\) be two possible values of \(\text{arg}(z)\)</p> <p>$$\phantom{|}$$</p>
 
-<p>the value of $$dfrac{1}{2\pi}\Big(\varphi_1-\varphi_0\Big) \in \mathbb{Z}$$</p> <p>$$\phantom{|}$$</p>
+<p>the value of $$\dfrac{1}{2\pi}\Big(\varphi_1-\varphi_0\Big) \in \mathbb{Z}$$</p> <p>$$\phantom{|}$$</p>
+
+<p>any complex number \(z\) can be split into polar form</p> <p>$$\phantom{|}$$</p>
+
+<p>$$z=\text{mgn}(z) \cdot \text{sgn}(z)$$</p> <p>$$\phantom{|}$$</p>
+
+<p>or rectangular form</p> <p>$$\phantom{|}$$</p>
+
+<p>$$z=\text{Re}(z) + i \text{Im}(z)$$</p> <p>$$\phantom{|}$$</p>
 
 			</div>
 		</div>
@@ -384,19 +396,53 @@
 		<div class="inner">
 			<div>
 
-<p class="largetype">Isometry Transformations | Complex Geometry</p> <p>$$\phantom{|}$$</p>
+<p class="largetype">Geometric Transformations | Complex Geometry</p> <p>$$\phantom{|}$$</p>
 
 <p>isometry transformations</p> <p>$$\phantom{|}$$</p>
 
-<p>Translation · Rotation · Conjugation</p> <p>$$\phantom{|}$$</p>
+<p>Conjugation · Translation/Addition · Rotation · Homothety · Multiplication · Linear · Inversion · Division · Rational/Möbius</p> <p>$$\phantom{|}$$</p>
 
-<p>translation by \(c\)</p> <p>$$\phantom{|}$$</p>
+<p>Conjugation \(f(z)\) reflects complex number \(z\) over real axis \(\mathbb{R}\)</p> <p>$$\phantom{|}$$</p>
+
+<p>$$f(z)=z^*$$</p> <p>$$\phantom{|}$$</p>
+
+<p>it is an isometry transformation</p> <p>$$\phantom{|}$$</p>
+
+<p>Translation/Addition \(f(z)\) moves complex number \(z\) by \(c\)</p> <p>$$\phantom{|}$$</p>
 
 <p>$$f(z)=z+c$$</p> <p>$$\phantom{|}$$</p>
 
-<p>rotation by \(\theta\) centered at \(0+0i\)</p> <p>$$\phantom{|}$$</p>
+<p>it is an isometry transformation</p> <p>$$\phantom{|}$$</p>
 
-<p>$$f(z)=z\cdot \exp(i\theta)$$</p> <p>$$\phantom{|}$$</p>
+<p>Rotation \(f(z)\) is defined as multiplication by element of \(\mathbb{S}^1\). It rotates \(z\) with center at \(0+0i\)</p> <p>$$\phantom{|}$$</p>
+
+<p>$$f(z)=z\cdot s \quad,\quad s\in\mathbb{S}^1$$</p> <p>$$\phantom{|}$$</p>
+
+<p>it is an isometry transformation</p> <p>$$\phantom{|}$$</p>
+
+<p>Homothety \(f(z)\) is defined as multiplication by element of \(\mathbb{R}\). It scales \(z\) with center at \(0+0i\)</p> <p>$$\phantom{|}$$</p>
+
+<p>$$f(z)=z\cdot r \quad,\quad r\in\mathbb{R}$$</p> <p>$$\phantom{|}$$</p>
+
+<p>it is a conformal transformation</p> <p>$$\phantom{|}$$</p>
+
+<p>Multiplication \(f(z)\) is a combination of rotation and homothety</p> <p>$$\phantom{|}$$</p>
+
+<p>$$f(z)=z\cdot a$$</p> <p>$$\phantom{|}$$</p>
+
+<p>it is a conformal transformation</p> <p>$$\phantom{|}$$</p>
+
+<p>Complex Inversion \(f(z)\) returns inverse of \(z\) over unit circle combined with reflection over real axis</p> <p>$$\phantom{|}$$</p>
+
+<p>$$f(z)=\dfrac{1}{z]$$</p> <p>$$\phantom{|}$$</p>
+
+<p>it is a conformal transformation</p> <p>$$\phantom{|}$$</p>
+
+<p>Geometric Inversion \(f(z)\) returns inverse of \(z\) over unit circle without reflecting over real axis</p> <p>$$\phantom{|}$$</p>
+
+<p>$$f(z)=\dfrac{1}{z^*}=\dfrac{1}{z^*}$$</p> <p>$$\phantom{|}$$</p>
+
+<p>it is a conformal transformation</p> <p>$$\phantom{|}$$</p>
 
 			</div>
 		</div>
