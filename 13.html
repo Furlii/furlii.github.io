@@ -226,7 +226,7 @@
 		<div class="inner">
 			<div>
 
-<p class="largetype">Complex Number Functions | Complex Geometry</p> <p>$$\phantom{|}$$</p>
+<p class="largetype">Complex Functions Intro | Complex Geometry</p> <p>$$\phantom{|}$$</p>
 
 <p>$$\text{Re}(z)=\dfrac{1}{2}\Big(z^*+z\Big)$$</p> <p>$$\phantom{|}$$</p>
 
@@ -253,6 +253,22 @@
 <p>but due to nature of periodicity, argument function returns multiple values of \(\varphi+2k\pi\)</p> <p>$$\phantom{|}$$</p>
 
 <p>\(\varphi\) being angle of \(z , 0+0i , 1+0i\) while \(k\in\mathbb{Z}\)</p> <p>$$\phantom{|}$$</p>
+
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- separator -->
+
+
+
+<div class="container">
+		<div class="inner">
+			<div>
+
+<p class="largetype">Complex Functions Result | Complex Geometry</p> <p>$$\phantom{|}$$</p>
 
 <p>values returned by \(\text{Re}(z)\) and \(\text{Im}(z)\) lies on real axis</p> <p>$$\phantom{|}$$</p>
 
@@ -314,21 +330,7 @@
 
 <p>$$zz^*-z a_0^*-a_0z^*=a_1 a_1^* -a_1 a_0^* -a_0 a_1^*$$</p> <p>$$\phantom{|}$$</p>
 
-			</div>
-		</div>
-	</div>
-
-
-
-<!-- separator -->
-
-
-
-<div class="container">
-		<div class="inner">
-			<div>
-
-<p class="largetype">Real Axis and Circle Group | Complex Geometry</p> <p>$$\phantom{|}$$</p>
+<p>Basic Examples :</p> <p>$$\phantom{|}$$</p>
 
 <p>set of real numbers \(\mathbb{R}\) form a horizontal axis on a complex plane</p> <p>$$\phantom{|}$$</p>
 
@@ -396,7 +398,7 @@
 		<div class="inner">
 			<div>
 
-<p class="largetype">Geometric Transformations | Complex Geometry</p> <p>$$\phantom{|}$$</p>
+<p class="largetype">Geometric Transformations 1 | Complex Geometry</p> <p>$$\phantom{|}$$</p>
 
 <p>isometry transformations</p> <p>$$\phantom{|}$$</p>
 
@@ -420,13 +422,29 @@
 
 <p>it is an isometry transformation</p> <p>$$\phantom{|}$$</p>
 
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- separator -->
+
+
+
+<div class="container">
+		<div class="inner">
+			<div>
+
+<p class="largetype">Geometric Transformations 2 | Complex Geometry</p> <p>$$\phantom{|}$$</p>
+
 <p>Homothety \(f(z)\) is defined as multiplication by element of \(\mathbb{R}\). It scales \(z\) with center at \(0+0i\)</p> <p>$$\phantom{|}$$</p>
 
 <p>$$f(z)=z\cdot r \quad,\quad r\in\mathbb{R}$$</p> <p>$$\phantom{|}$$</p>
 
 <p>it is a conformal transformation</p> <p>$$\phantom{|}$$</p>
 
-<p>Multiplication \(f(z)\) is a combination of rotation and homothety</p> <p>$$\phantom{|}$$</p>
+<p>Multiplication by a complex number \(a\) is a combination of rotation and homothety</p> <p>$$\phantom{|}$$</p>
 
 <p>$$f(z)=z\cdot a$$</p> <p>$$\phantom{|}$$</p>
 
@@ -444,6 +462,11 @@
 
 <p>it is a conformal transformation</p> <p>$$\phantom{|}$$</p>
 
+<p>Division by a complex number \(a\) can be described as multiplication by \(1/a\)</p> <p>$$\phantom{|}$$</p>
+
+<p>$$f(z)=\Big(\dfrac{z}{a}\Big)=z\cdot\Big(\dfrac{1}{a}\Big)$$</p> <p>$$\phantom{|}$$</p>
+
+<p>it is a conformal transformation</p> <p>$$\phantom{|}$$</p>
 			</div>
 		</div>
 	</div>
@@ -460,9 +483,28 @@
 
 <p class="largetype">Point Intersections in Complex Plane | Complex Geometry</p> <p>$$\phantom{|}$$</p>
 
-<p>this boils down to solving</p> <p>$$\phantom{|}$$</p>
+<p>this boils down to solving a set of two equations</p> <p>$$\phantom{|}$$</p>
 
-<p>one may solve a set of system of equation</p> <p>$$\phantom{|}$$</p>
+<p>$$\begin{array}{lllll}
+p_0 z z^* &+p_1 z &+p_2 z^* &=p_3 \\
+q_0 z z^* &+q_1 z &+q_2 z^* &=q_3 \\
+\end{array}$$</p> <p>$$\phantom{|}$$</p>
+
+<p>one method is to isolate \(z^*\) in the first equation</p> <p>$$\phantom{|}$$</p>
+
+<p>$$ \begin{array}{lllll}
+p_0 z z^* +p_1 z +p_2 z^* &=p_3 \\ \\ 
+p_0 z z^* +p_2 z^* &= -p_1 z+p_3 \\ \\ 
+z^* ( p_0 z  +p_2 )&=  -p_1 z+p_3 \\ \\                 
+z^*&= \dfrac{-p_1 z+p_3}{p_0 z  +p_2} \\ \\
+\end{array}$$</p> <p>$$\phantom{|}$$</p>
+
+<p>and then substitute \(z^*\) into the second equation</p> <p>$$\phantom{|}$$</p>
+
+<p>$$\begin{array}{lllll}
+q_0 z z^* &+q_1 z &+q_2 z^* &=q_3 \\
+q_0 z \dfrac{-p_1 z+p_3}{p_0 z  +p_2} &+q_1 z &+q_2 \dfrac{-p_1 z+p_3}{p_0 z  +p_2} &=q_3 \\
+\end{array}$$</p> <p>$$\phantom{|}$$</p>
 
 			</div>
 		</div>
